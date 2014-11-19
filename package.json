@@ -1,0 +1,35 @@
+{
+  "name": "fraktur",
+  "version": "1.0.0",
+  "description": "𝔠𝔬𝔫𝔳𝔢𝔯𝔱 𝔱𝔥𝔢 𝔩𝔞𝔱𝔦𝔫 𝔞𝔩𝔭𝔥𝔞𝔟𝔢𝔱 𝔱𝔬 𝔣𝔯𝔞𝔨𝔱𝔲𝔯 𝔲𝔫𝔦𝔠𝔬𝔡𝔢 𝔠𝔥𝔞𝔯𝔞𝔠𝔱𝔢𝔯𝔰",
+  "main": "index.js",
+  "dependencies": {
+    "through2": "~0.6.3",
+    "utf8-stream": "~0.0.0"
+  },
+  "devDependencies": {
+    "tape": "^3.0.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/fraktur.git"
+  },
+  "homepage": "https://github.com/substack/fraktur",
+  "keywords": [
+    "convert",
+    "latin",
+    "alphabet",
+    "fraktur",
+    "unicode",
+    "characters"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "license": "MIT"
+}
