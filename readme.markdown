@@ -29,6 +29,12 @@ That gretter was ther noon under the sonne.
 𝔗𝔥𝔞𝔱 𝔤𝔯𝔢𝔱𝔱𝔢𝔯 𝔴𝔞𝔰 𝔱𝔥𝔢𝔯 𝔫𝔬𝔬𝔫 𝔲𝔫𝔡𝔢𝔯 𝔱𝔥𝔢 𝔰𝔬𝔫𝔫𝔢.
 ```
 
+# usage
+
+This package ships with a `fraktur` command.
+
+It reads from stdin and writes converted data to stdout.
+
 # methods
 
 ``` js
