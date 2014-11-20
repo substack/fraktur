@@ -1,0 +1,8 @@
+usage: fraktur {OPTIONS}
+
+  Convert latin alphabet text on stdin to 𝔣𝔯𝔞𝔨𝔱𝔲𝔯 on stdout.
+
+  -d --decode   Decode instead of encoding.
+  -m --message  Input text instead of stdin.
+  -h --help     Show this message.
+
