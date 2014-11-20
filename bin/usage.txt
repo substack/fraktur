@@ -4,5 +4,13 @@ usage: fraktur {OPTIONS}
 
   -d --decode   Decode instead of encoding.
   -m --message  Input text instead of stdin.
+  -a --alphabet The alphabet to be used (default: fraktur).
   -h --help     Show this message.
 
+  Aphlabets:
+
+  - fraktur
+  - squared
+  - negative-squared
+  - circled
+  - negative-circled
