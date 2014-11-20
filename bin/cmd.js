@@ -10,14 +10,11 @@ var argv = minimist(process.argv.slice(2), {
     default: { d: false }
 });
 
-if (argv.decode) {
-}
-else {
-    process.stdin.pipe(utf8())
-        .pipe(through(function (buf, enc, next) {
-            this.push(fraktur(buf.toString('utf8')));
-            next();
-        }))
-        .pipe(process.stdout)
-    ;
-}
+var fn = argv.decode ? fraktur.decode : fraktur.encode;
+process.stdin.pipe(utf8())
+    .pipe(through(function (buf, enc, next) {
+        this.push(fn(buf.toString('utf8')));
+        next();
+    }))
+    .pipe(process.stdout)
+;
