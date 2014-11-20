@@ -8,7 +8,11 @@ var fs = require('fs');
 var path = require('path');
 
 var argv = minimist(process.argv.slice(2), {
-    alias: { d: [ 'decode', '𝔡𝔢𝔠𝔬𝔡𝔢', '𝔡' ], h: 'help', m: 'message' },
+    alias: {
+        d: [ 'decode', '𝔡𝔢𝔠𝔬𝔡𝔢', '𝔡' ],
+        h: [ 'help', '𝔥𝔢𝔩𝔭', '𝔥' ],
+        m: [ 'message', '𝔪' ]
+    },
     default: { d: false }
 });
 var fn = argv.decode ? fraktur.decode : fraktur.encode;

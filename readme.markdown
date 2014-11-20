@@ -7,12 +7,12 @@
 
 ``` js
 var fraktur = require('fraktur');
-var s = fraktur(process.argv.slice(2).join(' '));
+var s = fraktur.encode(process.argv.slice(2).join(' '));
 console.log(s);
 ```
 
 ```
-$ node convert.js "
+$ node encode.js "
 Heere bigynneth the Knyghtes Tale
 Whilom, as olde stories tellen us,
 Ther was a duc that highte Theseus;
@@ -33,7 +33,16 @@ That gretter was ther noon under the sonne.
 
 𝔗𝔥𝔦𝔰 𝔭𝔞𝔠𝔨𝔞𝔤𝔢 𝔰𝔥𝔦𝔭𝔰 𝔴𝔦𝔱𝔥 𝔞 `fraktur` 𝔠𝔬𝔪𝔪𝔞𝔫𝔡.
 
-𝕴𝔱 𝔯𝔢𝔞𝔡𝔰 𝔣𝔯𝔬𝔪 𝔰𝔱𝔡𝔦𝔫 𝔞𝔫𝔡 𝔴𝔯𝔦𝔱𝔢𝔰 𝔠𝔬𝔫𝔳𝔢𝔯𝔱𝔢𝔡 𝔡𝔞𝔱𝔞 𝔱𝔬 𝔰𝔱𝔡𝔬𝔲𝔱.
+```
+usage: fraktur {OPTIONS}
+
+  Convert latin alphabet text on stdin to 𝔣𝔯𝔞𝔨𝔱𝔲𝔯 on stdout.
+
+  -d --decode   Decode instead of encoding.
+  -m --message  Input text instead of stdin.
+  -h --help     Show this message.
+
+```
 
 # 𝔪𝔢𝔱𝔥𝔬𝔡𝔰
 
@@ -42,8 +51,13 @@ var fraktur = require('fraktur')
 ```
 
 ## var 𝔰𝔱𝔯𝔦𝔫𝔤 = fraktur(string)
+## var 𝔰𝔱𝔯𝔦𝔫𝔤 = fraktur.encode(string)
 
-𝕮𝔬𝔫𝔳𝔢𝔯𝔱 𝔞 𝔟𝔬𝔯𝔦𝔫𝔤 𝔩𝔞𝔱𝔦𝔫 `string` 𝔱𝔬 𝔞 𝔣𝔯𝔞𝔨𝔱𝔲𝔯 𝔰𝔱𝔯𝔦𝔫𝔤.
+𝕮𝔬𝔫𝔳𝔢𝔯𝔱 𝔞 𝔩𝔞𝔱𝔦𝔫 `string` 𝔱𝔬 𝔞 𝔣𝔯𝔞𝔨𝔱𝔲𝔯 `𝔰𝔱𝔯𝔦𝔫𝔤`.
+
+## var string = fraktur.decode(𝔰𝔱𝔯𝔦𝔫𝔤)
+
+𝕮𝔬𝔫𝔳𝔢𝔯𝔱 𝔞 𝔣𝔯𝔞𝔨𝔱𝔲𝔯 `𝔰𝔱𝔯𝔦𝔫𝔤` 𝔱𝔬 𝔞 𝔩𝔞𝔱𝔦𝔫 `string`.
 
 # 𝔩𝔦𝔠𝔢𝔫𝔰𝔢
 
